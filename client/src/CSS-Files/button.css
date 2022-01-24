@@ -1,0 +1,30 @@
+.buttonContainer {
+    display: inline-block;
+    width: 200px;
+    margin-top: 8px;
+}
+
+.previousButtonTable {
+    display: block;
+    width: 107px;
+    margin-top: 8px;
+}
+
+.buttonContainer button {
+    width: 150px;
+    margin: 1px;
+    font-size: 12px;
+}
+
+.otherContainer button {
+    width: 345px;
+    margin: 2px 10px;
+}
+
+@media (max-width: 480px) {
+    .buttonContainer {
+        display: block;
+        width: 320px;
+    }
+
+}

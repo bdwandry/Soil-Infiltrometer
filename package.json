@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "dexie": "^3.0.3",
+    "indexeddb-export-import": "^2.1.2",
+    "json-loader": "^0.5.7",
+    "prevent-pull-refresh": "^1.0.6",
+    "prop-types": "^15.7.2",
+    "react-chartjs-2": "^2.11.1",
+    "react-json-view": "^1.21.3",
+    "react-mobile-drawer": "^0.0.4",
+    "regression": "^2.0.1",
+    "web-vitals": "^1.1.1",
+    "write-json": "^3.0.1",
+    "write-json-file": "^4.3.0"
+  }
+}

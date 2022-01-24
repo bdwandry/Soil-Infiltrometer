@@ -1,0 +1,14 @@
+
+.border {
+    margin: 15px;
+    background: #616161;
+    border-radius: 15px;
+    contain: content;
+}
+
+.text {
+    margin: 25px 15px;
+
+    color: lightgrey;
+    text-align: left;
+}

@@ -18,6 +18,7 @@
     "react-csv": "^2.0.3",
     "react-dom": "^16.2.0",
     "react-drag-drawer": "^3.3.4",
+    "react-json-view": "^1.21.3",
     "react-line-graph": "^1.0.6",
     "react-linechart": "^1.1.12",
     "react-md": "^2.7.0",

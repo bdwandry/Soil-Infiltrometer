@@ -17,7 +17,6 @@ import CloseIcon from "@material-ui/icons/Close";
 import ListItemText from "@material-ui/core/ListItemText";
 import "../CSS-Files/About.css";
 import '../CSS-Files/button.css';
-import ReactJson from "react-json-view";
 
 
 function ImportExportIndexDBData({that}) {

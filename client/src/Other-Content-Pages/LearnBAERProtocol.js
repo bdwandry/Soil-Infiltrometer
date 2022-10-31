@@ -15,13 +15,8 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import CloseIcon from "@material-ui/icons/Close";
 import ListItemText from "@material-ui/core/ListItemText";
-import MobilePDFReader from 'pdf-viewer-reactjs';
 import "../CSS-Files/LearnInfil.css";
-import pdf from '../Files/BAERProtocol.pdf';
 import '../CSS-Files/button.css'
-
-import Viewer from '@phuocng/react-pdf-viewer';
-import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
 
 function LearnBAER({that}) {
     let OtherContentindex = 0;
@@ -114,13 +109,7 @@ function LearnBAER({that}) {
                 </div>
                 <div style={{ height: (that.state.ScreenHeight), width: "18%", float: "left"}}></div>
                 <div style={{ height: (that.state.ScreenHeight), width: "82%", float: "left"}}>
-                    <div className="App">
-                        {/*<Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">*/}
-                        <div id="pdfviewer">
-                            <Viewer fileUrl={pdf}/>
-                        </div>
-                        {/*</Worker>*/}
-                    </div>
+                    <object width="100%" height="95%" data="/BAERProtocol.pdf" type="application/pdf"></object>
                 </div>
             </div>
         )
@@ -165,27 +154,9 @@ function LearnBAER({that}) {
                     <main style={{marginTop: 10}}>
                     </main>
                 </div>
-                <div className="App">
-                    {/*<Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">*/}
-                    <div id="pdfviewer">
-                        <Viewer fileUrl={pdf}/>
-                    </div>
-                    {/*</Worker>*/}
+                <div style={{ height: (that.state.ScreenHeight), width: "82%", float: "left"}}>
+                    <object width="100%" height="95%" data="/BAERProtocol.pdf" type="application/pdf"></object>
                 </div>
-
-                {/*<div className={"border"}>*/}
-                {/*    <br/>*/}
-                {/*    <div className={"pdf"}>*/}
-                {/*        <MobilePDFReader*/}
-                {/*            document={{*/}
-                {/*                url: pdf,*/}
-                {/*                scale: "auto"*/}
-                {/*            }}*/}
-                {/*        />*/}
-                {/*    </div>*/}
-                {/*    <br/>*/}
-                {/*</div>*/}
-
             </div>
         )
     }

@@ -3,7 +3,7 @@
  * Contains a pdf viewer and a pdf to detail how to use the Minidisk infiltrometer specifically
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import {Link, NavLink} from "react-router-dom";
 import {AppBar, Button, Toolbar, Typography} from "@material-ui/core";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -15,13 +15,9 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import CloseIcon from "@material-ui/icons/Close";
 import ListItemText from "@material-ui/core/ListItemText";
-import MobilePDFReader from 'pdf-viewer-reactjs';
 import "../CSS-Files/LearnInfil.css";
-import pdf from '../Files/Mini_Disk_Manual_Web.pdf';
 import '../CSS-Files/button.css'
 
-import Viewer from '@phuocng/react-pdf-viewer';
-import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
 
 function LearnInfil({that}) {
     let OtherContentindex = 0;
@@ -112,14 +108,8 @@ function LearnInfil({that}) {
                     </Drawer>
                 </div>
                 <div style={{ height: (that.state.ScreenHeight), width: "18%", float: "left"}}></div>
-                <div style={{ height: (that.state.ScreenHeight), width: "82%", float: "left"}}>
-                    <div className="App">
-                        {/*<Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">*/}
-                        <div id="pdfviewer">
-                            <Viewer fileUrl={pdf}/>
-                        </div>
-                        {/*</Worker>*/}
-                    </div>
+                <div style={{ height: (that.state.ScreenHeight), width: "82%", float: "left", textAlign: "center"}}>
+                    <object width="100%" height="95%" data="/Mini_Disk_Manual_Web.pdf" type="application/pdf"></object>
                 </div>
             </div>
         )
@@ -164,12 +154,8 @@ function LearnInfil({that}) {
                     <main style={{marginTop: 10}}>
                     </main>
                 </div>
-                <div className="App">
-                    {/*<Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">*/}
-                    <div id="pdfviewer">
-                        <Viewer fileUrl={pdf}/>
-                    </div>
-                    {/*</Worker>*/}
+                <div style={{ height: (that.state.ScreenHeight), width: "100%", float: "left", textAlign: "center"}}>
+                    <object width="100%" height="95%" data="/Mini_Disk_Manual_Web.pdf" type="application/pdf"></object>
                 </div>
             </div>
         )
